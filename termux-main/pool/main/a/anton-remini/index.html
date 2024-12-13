@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Index of /HOME/termux-main/pool/a/anton-remini</title>
+   <style>
+      body {font-family:Arial, sans-serif;background-color:#1d1f21;color:#c5c8c6;padding:20px}
+      h1 {color:#f0c674}
+      table {width:100%;border-collapse:collapse}
+      th, td {padding:10px;text-align:left;border-bottom:1px solid #373b41}
+      th {background-color:#282a2e}
+      tr:hover {background-color:#373b41}
+      a {color:#8abeb7;text-decoration:none}
+      a:hover {text-decoration:underline}
+      .size, .date {text-align:right}
+      footer {text-align:center;margin-top:20px;color:#969896}
+   </style>
+</head>
+<body>
+   <h1>Index of /HOME/termux-main/pool/a/anton-remini</h1>
+   <table>
+       <thead>
+           <tr>
+               <th>Name</th>
+               <th class="size">Size</th>
+               <th class="date">Last Modified</th>
+           </tr>
+       </thead>
+       <tbody id="file-list"></tbody>
+   </table>
+   <footer>Generated automatically by <strong>Termux Package Repo</strong></footer>
+   <script>
+      const directories = [
+        "anton-remini_1.0.1_all.deb"
+     ];
+      const fileList = document.getElementById('file-list');
+
+      function fetchFileInfo(fileName) {
+         return fetch(fileName, { method: 'HEAD' })
+            .then(response => ({
+               size: formatFileSize(response.headers.get('Content-Length')),
+               date: formatDate(response.headers.get('Last-Modified'))
+            }))
+            .catch(error => {
+               console.error(`Gagal mendapatkan info file: ${fileName}`, error);
+               return { size: 'N/A', date: 'N/A' };
+            });
+      }
+
+      function formatFileSize(size) {
+         if (!size) return '0 B';
+         const units = ['B', 'KB', 'MB', 'GB', 'TB'];
+         let fileSize = parseInt(size, 10);
+         let index = 0;
+         while (fileSize >= 1024 && index < units.length - 1) {
+            fileSize /= 1024;
+            index++;
+         }
+         return `${fileSize.toFixed(2)} ${units[index]}`;
+      }
+
+      function formatDate(dateString) {
+         if (!dateString) return 'N/A';
+         const date = new Date(dateString);
+         const options = { 
+            year: 'numeric', 
+            month: '2-digit', 
+            day: '2-digit', 
+            hour: '2-digit', 
+            minute: '2-digit', 
+            second: '2-digit' 
+         };
+         return date.toLocaleString('id-ID', options);
+      }
+
+      function populateFileList() {
+         directories.forEach(file => {
+            const row = document.createElement('tr');
+            row.innerHTML = `
+               <td><a href="${file}">${file}</a></td>
+               <td class="size">Memuat...</td>
+               <td class="date">Memuat...</td>
+            `;
+            fileList.appendChild(row);
+            fetchFileInfo(file).then(({ size, date }) => {
+               row.querySelector('.size').textContent = size;
+               row.querySelector('.date').textContent = date;
+            });
+         });
+      }
+      populateFileList();
+   </script>
+</body>
+</html>

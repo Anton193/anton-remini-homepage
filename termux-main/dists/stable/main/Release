@@ -1,0 +1,8 @@
+Origin: Termux
+Label: Termux Stable
+Suite: stable
+Codename: stable
+Date: Sat, 13 Dec 2024 12:00:00 UTC
+Architectures: all
+Components: main
+Description: Termux stable repository

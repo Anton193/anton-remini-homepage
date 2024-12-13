@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="anton-remini">
+    <meta name="theme-color" content="#00CC00">
+    <title>HOME</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+
+  <div class="container">
+    <header class="page-header">
+      <h1><strong>HOME</strong></h1>
+    </header>
+    <section>
+      <h4>About the Project</h4>
+      <p><strong>Anton Package Project</strong> is a simple package management system designed to make it easier for Android users to install and manage various packages directly from the terminal. The goal of this project is to simplify the process of handling tools and applications with ease and efficiency.</p>
+      <p>Homepage: <a href="https://antoncodder.online" target="_blank">https://antoncodder.online</a></p>
+      <p>GitHub: <a href="https://github.com/Anton193" target="_blank">https://github.com/Anton193</a></p>
+    </section>
+    <hr>
+    <section>
+      <h4>What’s Available in Anton Package Project?</h4>
+      <p>This project offers a repository that allows users to manage the required packages and tools. Users can conveniently install, update, or remove packages using terminal commands.</p>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Repository</th>
+            <th scope="col">sources.list entry</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="./termux-main/">main</a></td>
+            <td>deb https://antoncodder.online/termux-main/ stable main</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <hr>
+    <section>
+      <h4>anton-remini</h4>
+      <p><strong>anton-remini</strong> - A powerful CLI tool that enhances image quality using advanced image processing techniques.</p>
+      <p><strong>anton-remini</strong> supports various image formats such as <strong>JPG, JPEG, PNG, and WEBP</strong>, making it highly versatile. The tool enables you to enhance individual images, search for images in specific directories, and process entire folders of images automatically.</p>
+      <h5>Usage:</h5>
+      <pre>hd [input.jpg output.jpg | input.jpg] [-S] [-h | --help] [-v | --version]</pre>
+      <h5>Options:</h5>
+      <ul>
+        <li><code>-h, --help</code> — Show help message and usage information</li>
+        <li><code>-v, --version</code> — Display the version of the tool</li>
+        <li><code>-S &lt;filename&gt;</code> — Search for an image file by name within <code>/storage/emulated/0</code>. Once found, the user will be prompted to continue processing the image.</li>
+      </ul>
+      <h5>Examples:</h5>
+      <ul>
+        <li><strong>Enhance a single image:</strong>  
+          <pre>hd input.jpg output.jpg</pre>  
+          Enhances 'input.jpg' and saves it as 'output.jpg'.
+        </li>
+        <li><strong>Search for and process an image:</strong>  
+          <pre>hd -S foto.jpg</pre>  
+          Searches for 'foto.jpg' within <code>/storage/emulated/0</code>. If found, the image will be processed.
+        </li>
+        <li><strong>Display version and help:</strong>  
+          <pre>hd --version</pre>  
+          Displays the version of anton-remini.  
+          <pre>hd --help</pre>  
+          Shows the help message with usage instructions.
+        </li>
+      </ul>
+      <h5>Supported Formats:</h5>
+      <ul>
+        <li>JPG (<code>.jpg</code>)</li>
+        <li>JPEG (<code>.jpeg</code>)</li>
+        <li>PNG (<code>.png</code>)</li>
+        <li>WEBP (<code>.webp</code>)</li>
+      </ul>
+      <h5>Why Use anton-remini?</h5>
+      <ul>
+        <li><strong>Batch Processing:</strong> Enhance multiple images in one command.</li>
+        <li><strong>Multi-Format Support:</strong> Works seamlessly with JPG, JPEG, PNG, and WEBP formats.</li>
+        <li><strong>Simple CLI Usage:</strong> User-friendly commands with automatic file naming.</li>
+        <li><strong>File Search:</strong> Easily locate and process files from <code>/storage/emulated/0</code>.</li>
+      </ul>
+      <p>Enjoy enhancing your images with anton-remini! 🚀</p>
+    </section>
+    <hr>
+  </div>
+
+</body>
+</html>
