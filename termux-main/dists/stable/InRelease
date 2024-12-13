@@ -5,16 +5,16 @@ Origin: Termux
 Label: Termux Stable
 Suite: stable
 Codename: stable
-Date: Fri, 14 Dec 2024 01:42:00 UTC
+Date: Sat, 13 Dec 2024 12:00:00 UTC
 Architectures: all
 Components: main
 Description: Termux stable repository
 -----BEGIN PGP SIGNATURE-----
 
-iMsEAQEIAB0WIQTgcmwG4EGRMgaejRk5Vq8zCORf0AUCZ1yCigAKCRA5Vq8zCORf
-0J2jBL4yqyU1C052t4N3Cw3uS1YacuJ6S/0a3MrTqAthJwmhqxMBe+fdzTNYrGXG
-Lj4DGTp0dXNO2fLonDkd5gxHozWap7e0RVg4De3lxomFWs3OYU0AsB00c5kKiWk2
-a0EifgINSEYKe1ug5cf+S7X1gzQwv6GJZ7Z6VIxYHfcpRvIq0lWKWc/5UtriMWpV
-ImxXA2W+HMeryPgAcw==
-=tH6x
+iMsEAQEIAB0WIQTgcmwG4EGRMgaejRk5Vq8zCORf0AUCZ1vU7gAKCRA5Vq8zCORf
+0NrPBMC2uAsSyMTSRzniw4HHj8Y1IL8WWTmwAW8ZUQtZbFrE7mHl56Jl4zzeXvVi
+1wdeXi1VipdzhjMl8qtI9niEuj8R7UC4zJ3XEidCucmiQc5wKopcv5GWCwmB+DfV
+9oMlN77CrseodDSJM1Ux8kX5QH1H48LHEqmlhwldg5p8WiuJ6VgqPTV4dNSK7DgK
+arVqvjyyEuskTfIyhA==
+=B0R7
 -----END PGP SIGNATURE-----
