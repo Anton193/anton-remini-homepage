@@ -1,21 +1,8 @@
-Date: Fri, 13 Dec 2024 17:37:15 +0000
-MD5Sum:
- 583c24f6665d88b3a251689d2156734d               38 Release
- bdf8781161586e1225c23bfe3f7c54d8              176 main/Release
- bee946b1d72091df2f09af1a61b4c906              479 main/binary-all/Packages.gz
- b7f02c99c8f79d5315221ce9a5e8a6df              443 main/binary-arm/Packages.gz
-SHA1:
- 9660bc2d1be46fe153b394e7aff5847e45b1fc39               38 Release
- 26ce8e935383f955dc0ac426c461c7ffc9ff1be5              176 main/Release
- 6655c3556e2d97c6a81ad18f34a9021ff1381d7b              479 main/binary-all/Packages.gz
- 03417adc19828d885ce15b3dfc72b5393d304633              443 main/binary-arm/Packages.gz
-SHA256:
- d30486c70daa0606018241bffa9fa1898bd072c5545d89bec4e5c31c4f548e19               38 Release
- a49dda88693d462c053e5c97af84ca0c01cae4b2b3c7f6f6a4a32f2bd007dc30              176 main/Release
- e57b94ddb307ab7dea2999e51a9178d85ed31008a781d57667dd43f6cd68fd7e              479 main/binary-all/Packages.gz
- 8e0d0d636c133d375901c8a2363b19a738c86f9e23d54d1e152bdaf5b915d73b              443 main/binary-arm/Packages.gz
-SHA512:
- 9b23368a2e313e738ccd5ba3826f47cd297ec813ca94761036486a1250073ea0d7e51ac0f2b6d58473fab6315712ca39bdb1ed9322c51cfa511d73b1d7accc26               38 Release
- 4dbf9697f5de7624400eeec0a441efe66e00f72200b9ba238299989e17ca7da1aa2d8d4d659c625d852d9a88ce18abffb41eddef7a46d7767cf6acb57d663dc3              176 main/Release
- 5afb292e15729cd6962ff100e4cba6089f9449fe7c7711ea57a1cacc70a3a39bd222a97fa76f6b61092ea1f504044c1cb87052abfdf6ab8c7af96f4af26e401c              479 main/binary-all/Packages.gz
- 495a9ac162b548bfb92dc83e53bfc56036efef03baa21c8cff7e900de0bb8292f23541e5b090af968aa066e96c6f7158cd21e1432d58bbeafd256a064efc97ee              443 main/binary-arm/Packages.gz
+Origin: Termux
+Label: Termux Stable
+Suite: stable
+Codename: stable
+Date: Fri, 13 Dec 2024 17:37:15 UTC
+Architectures: all
+Components: main
+Description: Termux stable repository
